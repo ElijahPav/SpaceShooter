@@ -111,7 +111,7 @@ public class CharacterShootingController : MonoBehaviour
 
     public void  IncreaseBulletParameters()
     {
-        _bulletSpeed += _bulletSpeed * BULLETSPEEDPERCENT;
+        _bulletSpeed += DEFAULTBULLETSPEED * BULLETSPEEDPERCENT;
         _bulletDamage += _bulletDamage * BULLETDAMAGEPERCENT;
 
         _damageText.text = _bulletDamage.ToString("F4");
